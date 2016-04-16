@@ -19,7 +19,12 @@ exit
 /storage/emulated/0/Github/ext2tools $ make CC="$CC" CXX="$CXX" SHELL="$SHELL"
 make -C e2p
 make[1]: Entering directory '/storage/emulated/0/Github/ext2tools/e2p'
-arm-linux-androideabi-gcc -pie -I/data/data/com.n0n3m4.droidc/files/gcc/arm-linux-androideabi/include/ncurses -O0 -g -I -DHAVE_ERRNO_H -DHAVE_SYS_STAT_H -DHAVE_UNISTD_H -I. -I.. -c fgetflags.c
+arm-linux-androideabi-gcc -pie -I/data/data/com.n0n3m4.droidc/files/gcc/arm-linux-androideabi/include/ncurses -O0 
+
+
+
+
+-g -I -DHAVE_ERRNO_H -DHAVE_SYS_STAT_H -DHAVE_UNISTD_H -I. -I.. -c fgetflags.c
 fgetflags.c: In function 'fgetflags':
 fgetflags.c:93:2: error: 'errno' undeclared (first use in this function)
   errno = EOPNOTSUPP;
