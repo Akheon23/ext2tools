@@ -10,5 +10,5 @@ compiler:
 
 
 
-before_install: sudo apt-get -f install && make 
+before_install: sudo apt-get upgrade && sudo apt-get -f install && make 
 install: true
