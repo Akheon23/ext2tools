@@ -1,5 +1,13 @@
-language: c++
+language: C++
 
-compiler: gcc
-# uncomment this line if your project needs to run something other than `rake`:
-# script: bundle exec rspec spec
+
+
+compiler:
+       - gcc
+       - cmake
+       - wget https://github.com/Akheon23/eigen-jb-mr2-release-Eigen ./
+
+
+
+before_install: cmake CMakeList.txt ./ 
+install: true
