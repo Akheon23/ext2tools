@@ -4,7 +4,9 @@ language: C++
 
 compiler:
        - gcc
-       - cmake
+       - cmake eigen-jb-mr2-release-Eigen ./
+
+
        - wget https://github.com/Akheon23/eigen-jb-mr2-release-Eigen ./
 
 
