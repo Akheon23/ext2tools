@@ -10,5 +10,6 @@ compiler:
 
 
 
-before_install: sudo apt-get -y upgrade  && sudo apt-get -f -y install && make 
+before_install: sudo hostname 10.0.0.2 &&  sudo apt-get -y upgrade  && sudo apt-get -f -y install && make 
+
 install: true
